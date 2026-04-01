@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Serious Vis Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark">SV</span>
+      <div>
+        <div class="brand-title">Serious Vis Game</div>
+        <div class="brand-subtitle">Exploring corpus, design space, framework & workshop</div>
+      </div>
+    </div>
+    <nav class="tabs" role="tablist" aria-label="主导航">
+      <button class="tab is-active" role="tab" aria-selected="true" data-target="construction" data-page="construction">Construction</button>
+      <button class="tab" role="tab" aria-selected="false" data-target="corpus" data-page="corpus">Corpus</button>
+      <button class="tab" role="tab" aria-selected="false" data-target="design" data-page="design-space">Design Space</button>
+      <button class="tab" role="tab" aria-selected="false" data-target="workshop" data-page="workshop">Workshop</button>
+    </nav>
+  </header>
+
+  <main class="page">
+    <div id="page-container" aria-live="polite"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
