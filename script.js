@@ -48,11 +48,18 @@ const initConstruction = () => {
   const sections = document.querySelectorAll(
     '.construction-content [id^="facet-"], .construction-content [id^="dimension-"]'
   );
+  let activeLockHash = null;
+  let lockedTargetY = null;
 
   const setActiveLink = (hash) => {
     links.forEach((link) => {
       link.classList.toggle('is-active', link.getAttribute('href') === hash);
     });
+  };
+
+  const releaseActiveLock = () => {
+    activeLockHash = null;
+    lockedTargetY = null;
   };
 
   if (toggle) {
@@ -63,8 +70,27 @@ const initConstruction = () => {
   }
 
   links.forEach((link) => {
-    link.addEventListener('click', () => {
-      setActiveLink(link.getAttribute('href'));
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      const hash = link.getAttribute('href');
+      const target = document.querySelector(hash);
+      if (!target) return;
+
+      const headerOffset = 110;
+      const targetY = Math.max(
+        0,
+        window.scrollY + target.getBoundingClientRect().top - headerOffset
+      );
+
+      activeLockHash = hash;
+      lockedTargetY = targetY;
+      setActiveLink(hash);
+      window.history.replaceState(null, '', hash);
+      window.scrollTo({
+        top: targetY,
+        behavior: 'smooth',
+      });
+
       if (window.matchMedia('(max-width: 720px)').matches) {
         sidebar.classList.add('is-collapsed');
         if (toggle) toggle.setAttribute('aria-expanded', 'false');
@@ -76,6 +102,10 @@ const initConstruction = () => {
 
   const observer = new IntersectionObserver(
     (entries) => {
+      if (activeLockHash) {
+        return;
+      }
+
       const visible = entries
         .filter((entry) => entry.isIntersecting)
         .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
@@ -91,6 +121,19 @@ const initConstruction = () => {
   );
 
   sections.forEach((section) => observer.observe(section));
+  window.addEventListener(
+    'scroll',
+    () => {
+      if (activeLockHash === null || lockedTargetY === null) {
+        return;
+      }
+
+      if (Math.abs(window.scrollY - lockedTargetY) < 6) {
+        releaseActiveLock();
+      }
+    },
+    { passive: true }
+  );
 
   const hash = window.location.hash;
   if (hash) {

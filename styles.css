@@ -9,6 +9,12 @@
   --accent-2: #bfe6df;
   --panel: #f6fffd;
   --shadow: 0 20px 40px rgba(18, 63, 55, 0.12);
+  --f1-strong: #629be0;
+  --f1-soft: #f2f7fd;
+  --f2-strong: #e38082;
+  --f2-soft: #fbf1f1;
+  --f3-strong: #bc94d3;
+  --f3-soft: #f6f1fa;
 }
 
 * {
@@ -209,10 +215,35 @@ body {
   color: var(--ink);
 }
 
+.sidebar-link-f1.is-active,
+.sidebar-sublink-f1.is-active {
+  background: var(--f1-soft);
+  color: var(--f1-strong);
+}
+
+.sidebar-link-f2.is-active,
+.sidebar-sublink-f2.is-active {
+  background: var(--f2-soft);
+  color: var(--f2-strong);
+}
+
+.sidebar-link-f3.is-active,
+.sidebar-sublink-f3.is-active {
+  background: var(--f3-soft);
+  color: var(--f3-strong);
+}
+
 .construction-content {
   display: flex;
   flex-direction: column;
   gap: 32px;
+}
+
+.facet-block {
+  padding: 28px;
+  border-radius: 28px;
+  border: 1px solid rgba(18, 63, 55, 0.08);
+  box-shadow: 0 18px 36px rgba(18, 63, 55, 0.06);
 }
 
 .facet-block h2 {
@@ -223,6 +254,8 @@ body {
 
 .dimension-block {
   margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(18, 63, 55, 0.1);
 }
 
 .facet-block,
@@ -243,7 +276,7 @@ body {
 }
 
 .decision-card {
-  background: rgba(246, 255, 253, 0.9);
+  background: rgba(255, 255, 255, 0.82);
   border: 1px solid rgba(18, 63, 55, 0.12);
   border-radius: 18px;
   padding: 16px;
@@ -269,6 +302,63 @@ body {
   margin: 0;
   font-size: 0.95rem;
   color: var(--muted);
+}
+
+.facet-f1 {
+  background: var(--f1-soft);
+}
+
+.facet-f1 h2,
+.facet-f1 h3,
+.facet-f1 .decision-card h4 {
+  color: var(--f1-strong);
+}
+
+.facet-f1 .dimension-block {
+  border-top-color: rgba(98, 155, 224, 0.22);
+}
+
+.facet-f1 .decision-card {
+  border-color: rgba(98, 155, 224, 0.22);
+  box-shadow: 0 12px 24px rgba(98, 155, 224, 0.12);
+}
+
+.facet-f2 {
+  background: var(--f2-soft);
+}
+
+.facet-f2 h2,
+.facet-f2 h3,
+.facet-f2 .decision-card h4 {
+  color: var(--f2-strong);
+}
+
+.facet-f2 .dimension-block {
+  border-top-color: rgba(227, 128, 130, 0.22);
+}
+
+.facet-f2 .decision-card {
+  border-color: rgba(227, 128, 130, 0.22);
+  box-shadow: 0 12px 24px rgba(227, 128, 130, 0.12);
+}
+
+.facet-f3 {
+  background: var(--f3-soft);
+}
+
+.facet-f3 h2,
+.facet-f3 h3,
+.facet-f3 .decision-card h4 {
+  color: var(--f3-strong);
+}
+
+.facet-f3 .dimension-block {
+  border-top-color: rgba(188, 148, 211, 0.22);
+}
+
+.facet-f3 .decision-card {
+  border-color: rgba(188, 148, 211, 0.22);
+  box-shadow: 0 12px 24px rgba(188, 148, 211, 0.12);
 }
 
 @keyframes fadeIn {
@@ -338,6 +428,10 @@ body {
 
   .decision-grid {
     grid-template-columns: 1fr;
+  }
+
+  .facet-block {
+    padding: 22px;
   }
 }
 
