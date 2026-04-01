@@ -22,6 +22,7 @@ const loadPage = async (page) => {
     panel.classList.add('is-active');
     panel.setAttribute('aria-hidden', 'false');
   }
+  initConstruction();
 };
 
 const activate = async (tab) => {
@@ -37,3 +38,64 @@ tabs.forEach((tab) => {
 });
 
 activate(document.querySelector('.tab.is-active'));
+
+const initConstruction = () => {
+  const sidebar = document.querySelector('.sidebar');
+  if (!sidebar) return;
+
+  const toggle = sidebar.querySelector('.sidebar-toggle');
+  const links = sidebar.querySelectorAll('a[href^="#"]');
+  const sections = document.querySelectorAll(
+    '.construction-content [id^="facet-"], .construction-content [id^="dimension-"]'
+  );
+
+  const setActiveLink = (hash) => {
+    links.forEach((link) => {
+      link.classList.toggle('is-active', link.getAttribute('href') === hash);
+    });
+  };
+
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      const collapsed = sidebar.classList.toggle('is-collapsed');
+      toggle.setAttribute('aria-expanded', String(!collapsed));
+    });
+  }
+
+  links.forEach((link) => {
+    link.addEventListener('click', () => {
+      setActiveLink(link.getAttribute('href'));
+      if (window.matchMedia('(max-width: 720px)').matches) {
+        sidebar.classList.add('is-collapsed');
+        if (toggle) toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+
+  if (!sections.length) return;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+
+      if (visible.length) {
+        setActiveLink(`#${visible[0].target.id}`);
+      }
+    },
+    {
+      rootMargin: '-40% 0px -50% 0px',
+      threshold: [0, 0.25, 0.5, 0.75, 1],
+    }
+  );
+
+  sections.forEach((section) => observer.observe(section));
+
+  const hash = window.location.hash;
+  if (hash) {
+    setActiveLink(hash);
+  } else if (sections[0]) {
+    setActiveLink(`#${sections[0].id}`);
+  }
+};

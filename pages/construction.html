@@ -1,4 +1,193 @@
-<section class="panel is-active" role="tabpanel">
-  <h1>Construction</h1>
-  <p>空白页：这里将展示 Construction 的内容。</p>
+<section class="panel is-active construction" role="tabpanel">
+  <div class="construction-layout">
+    <aside class="sidebar" aria-label="Construction 导航">
+      <div class="sidebar-title">Construction Map</div>
+      <button class="sidebar-toggle" type="button" aria-expanded="true">目录</button>
+      <nav class="sidebar-nav" id="construction-nav">
+        <a href="#facet-f1" class="sidebar-link">F1 · Failure Emergence</a>
+        <a href="#dimension-d1" class="sidebar-sublink">Structural Constraints</a>
+        <a href="#dimension-d2" class="sidebar-sublink">Triggering Conditions</a>
+
+        <a href="#facet-f2" class="sidebar-link">F2 · Failure Experience</a>
+        <a href="#dimension-d3" class="sidebar-sublink">Constraints Presentation</a>
+        <a href="#dimension-d4" class="sidebar-sublink">Failure Encoding</a>
+
+        <a href="#facet-f3" class="sidebar-link">F3 · Failure Response</a>
+        <a href="#dimension-d5" class="sidebar-sublink">Action Adjustment</a>
+        <a href="#dimension-d6" class="sidebar-sublink">Exploratory Learning</a>
+        <a href="#dimension-d7" class="sidebar-sublink">Interpretive Reframing</a>
+      </nav>
+    </aside>
+
+    <div class="construction-content">
+      <section id="facet-f1" class="facet-block">
+        <h2>Failure Emergence</h2>
+        <p>Failure emergence refers to how failure arises inherently from data structures and system rules, focusing on the structural constraints that characterize failure and the conditions under which it is triggered.</p>
+
+        <section id="dimension-d1" class="dimension-block">
+          <h3>Structural Constraints</h3>
+          <p>This dimension describes how the data, models, and rules constrain possible outcomes, making certain goals difficult or impossible to achieve.</p>
+          <div class="decision-grid">
+            <article class="decision-card">
+              <h4>Pre-determined outcomes</h4>
+              <img src="images/decision_img/InevitableSuperRich.png" alt="Pre-determined outcomes example" />
+              <p>It refers to cases where the outcome of failure is already determined by the underlying data or model before the game begins.</p>
+            </article>
+            <article class="decision-card">
+              <h4>Bounded value ranges</h4>
+              <img src="images/decision_img/TheEn-ROADS.png" alt="Bounded value ranges example" />
+              <p>It refers to cases where numerical constraints such as limited total resources or capped indicators restrict players to optimizing within a limited range and prevent them from achieving success.</p>
+            </article>
+            <article class="decision-card">
+              <h4>Conflicting metrics</h4>
+              <img src="images/decision_img/EducateYourChild.png" alt="Conflicting metrics example" />
+              <p>It refers to cases where variables are interdependent and impose trade-offs, such that improvements in one metric come at the expense of others and multiple metrics cannot simultaneously reach their ideal states.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="dimension-d2" class="dimension-block">
+          <h3>Triggering Conditions</h3>
+          <p>This dimension describes the circumstances under which failure occurs, resulting from interactions between system dynamics and player actions.</p>
+          <div class="decision-grid">
+            <article class="decision-card">
+              <h4>Decision-driven</h4>
+              <img src="images/decision_img/TheNestEggGame.png" alt="Decision-driven example" />
+              <p>It refers to cases where suboptimal player decisions lead to failure, such as ineffective strategies or inappropriate sequencing of actions.</p>
+            </article>
+            <article class="decision-card">
+              <h4>Knowledge-constrained</h4>
+              <img src="images/decision_img/SalubriousGuess.png" alt="Knowledge-constrained example" />
+              <p>It refers to cases where players lack sufficient background knowledge or an adequate understanding of system rules when making decisions.</p>
+            </article>
+            <article class="decision-card">
+              <h4>Externally-driven</h4>
+              <img src="images/decision_img/PeopleofthePandemic.png" alt="Externally-driven example" />
+              <p>It refers to cases where failure arises from factors beyond the player's control, such as the actions of others, particularly in collaborative contexts.</p>
+            </article>
+            <article class="decision-card">
+              <h4>Systemic</h4>
+              <img src="images/decision_img/InevitableSuperRich.png" alt="Systemic example" />
+              <p>It refers to cases where certain goals remain difficult to achieve even with well-reasoned decisions due to inherent structural constraints of the system.</p>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <section id="facet-f2" class="facet-block">
+        <h2>Failure Experience</h2>
+        <p>Failure experience refers to how systems represent failure in perceptible and interpretable forms, enabling players to perceive constraints and understand failure outcomes by presenting pre-failure constraints and encoding failure.</p>
+
+        <section id="dimension-d3" class="dimension-block">
+          <h3>Constraints Presentation</h3>
+          <p>This dimension describes when and how system constraints are exposed through visualization, allowing players to perceive the conditions under which failure occurs.</p>
+          <div class="decision-grid">
+            <article class="decision-card">
+              <h4>Explicit visual marks</h4>
+              <img src="images/decision_img/USPresidentialElectiony.png" alt="Explicit visual marks example" />
+              <p>It describes cases where constraints are directly represented through visualization elements such as threshold lines, upper bounds, or warning indicators, allowing players to clearly perceive them prior to interaction.</p>
+            </article>
+            <article class="decision-card">
+              <h4>Implicit indicators</h4>
+              <img src="images/decision_img/TheEn-ROADS.png" alt="Implicit indicators example" />
+              <p>It describes cases where failure conditions are not directly represented, but are indirectly reflected through changes in data or indicators, such as curve trends, slowing growth, or diminishing effects, allowing players to gradually perceive these constraints during interaction.</p>
+            </article>
+            <article class="decision-card">
+              <h4>Post-hoc consequences</h4>
+              <img src="images/decision_img/CollegeChancesbyIncome.png" alt="Post-hoc consequences example" />
+              <p>It refers to cases where the system does not explicitly present constraints in advance, but instead reveals them when certain conditions are met through outcomes such as game termination or revealing the correct answers.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="dimension-d4" class="dimension-block">
+          <h3>Failure Encoding</h3>
+          <p>This dimension describes how failure is encoded into perceivable and interpretable outcomes that can be recognized by players.</p>
+          <div class="decision-grid">
+            <article class="decision-card">
+              <h4>Comparative performance</h4>
+              <img src="images/decision_img/SalubriousGuess.png" alt="Comparative performance example" />
+              <p>It describes cases where failure is not treated as an independent outcome, but is instead reflected through the relative gap between the player and a target or other players, such as scores, rankings, or progress, allowing players to perceive their distance from success within a comparative frame.</p>
+            </article>
+            <article class="decision-card">
+              <h4>Evaluative feedback</h4>
+              <img src="images/decision_img/51sprints.png" alt="Evaluative feedback example" />
+              <p>It describes cases where failure functions as immediate feedback on the results of current actions, signaling unmet goals and guiding players to adjust their strategies based on these outcomes, thereby gradually improving their behavior.</p>
+            </article>
+            <article class="decision-card">
+              <h4>Difficulty mapping</h4>
+              <img src="images/decision_img/AbortionMazes.png" alt="Difficulty mapping example" />
+              <p>It captures cases where the scale and frequency of failure are treated as quantifiable degrees, often reflected through the time and effort players must expend to overcome repeated setbacks.</p>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <section id="facet-f3" class="facet-block">
+        <h2>Failure Response</h2>
+        <p>Failure response refers to how players react to failure and take subsequent actions to adjust, understand, and reassess it, including action adjustment, exploratory learning, and interpretive reframing.</p>
+
+        <section id="dimension-d5" class="dimension-block">
+          <h3>Action Adjustment</h3>
+          <p>This dimension describes how players use their agency to make adjustments based on their existing understanding and attribution, in order to attempt to improve outcomes.</p>
+          <div class="decision-grid">
+            <article class="decision-card">
+              <h4>Parameter tuning</h4>
+              <img src="images/decision_img/BirthControlMeasures.png" alt="Parameter tuning example" />
+              <p>It involves improving outcomes by adjusting numerical variables or system parameters, such as changing resource proportions, policy intensity, or other controllable parameters, thereby optimizing current performance.</p>
+            </article>
+            <article class="decision-card">
+              <h4>Scope &amp; filtering selection</h4>
+              <img src="images/decision_img/ToBuildaBetterBallot.png" alt="Scope and filtering selection example" />
+              <p>It involves adjusting decisions by changing the subset of data under consideration, such as selecting different regions, groups, or time intervals, or applying different filtering conditions to obtain diverse results.</p>
+            </article>
+            <article class="decision-card">
+              <h4>Action sequence modification</h4>
+              <img src="images/decision_img/HeartSaver.png" alt="Action sequence modification example" />
+              <p>It involves exploring alternative strategies by revising the timing or order of actions, such as rearranging policy implementation schedules or adjusting action timing to pursue different effects.</p>
+            </article>
+            <article class="decision-card">
+              <h4>Strategy reconfiguration</h4>
+              <img src="images/decision_img/TheNestEggGame.png" alt="Strategy reconfiguration example" />
+              <p>It involves exploring possible solutions by combining different strategies or options, and optimizing decisions by comparing outcome differences across various combinations.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="dimension-d6" class="dimension-block">
+          <h3>Exploratory Learning</h3>
+          <p>This dimension describes how players gradually develop a deeper understanding of failure through interaction with the system, enabling them to identify valid outcomes as well as the underlying rules and patterns of the system.</p>
+          <div class="decision-grid">
+            <article class="decision-card">
+              <h4>Iterative experimentation</h4>
+              <img src="images/decision_img/HeartSaver.png" alt="Iterative experimentation example" />
+              <p>It involves exploring different pathways through repeated attempts and continuous experimentation, thereby gradually accumulating an understanding of system behavior, variable relationships, and the issue itself.</p>
+            </article>
+            <article class="decision-card">
+              <h4>Hypothesis testing</h4>
+              <img src="images/decision_img/CollegeChancesbyIncome.png" alt="Hypothesis testing example" />
+              <p>It involves approaching reasonable decisions by estimating or inferring possible outcomes under conditions of incomplete information, while helping players develop familiarity with relevant domain knowledge.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="dimension-d7" class="dimension-block">
+          <h3>Interpretive Reframing</h3>
+          <p>This dimension describes the process by which players define and reinterpret the causes and meanings of failure after forming an understanding of it.</p>
+          <div class="decision-grid">
+            <article class="decision-card">
+              <h4>Perspective shifting</h4>
+              <img src="images/decision_img/EducateYourChild.png" alt="Perspective shifting example" />
+              <p>It involves reinterpreting the problem by shifting the represented role or standpoint, reattributing failure to different groups or situational conditions, and reassessing failure from a new perspective.</p>
+            </article>
+            <article class="decision-card">
+              <h4>Criteria reweighting</h4>
+              <img src="images/decision_img/51sprints.png" alt="Criteria reweighting example" />
+              <p>It involves interpreting failure as arising from conflicts among multiple goals, and thus adjusting the priority among different objectives to redefine the criteria for what counts as success, thereby reshaping the meaning of failure.</p>
+            </article>
+          </div>
+        </section>
+      </section>
+    </div>
+  </div>
 </section>
