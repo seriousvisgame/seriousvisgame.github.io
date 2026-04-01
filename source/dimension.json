@@ -1,0 +1,72 @@
+[
+  {
+    "dimension_id": "D1",
+    "dimension_parent": "F1",
+    "dimension_description": "This dimension describes how the data, models, and rules constrain possible outcomes, making certain goals difficult or impossible to achieve.",
+    "dimension_decision": [
+      "pre-determined outcomes",
+      "bounded value ranges",
+      "conflicting metrics"
+    ]
+  },
+  {
+    "dimension_id": "D2",
+    "dimension_parent": "F1",
+    "dimension_description": "This dimension describes the circumstances under which failure occurs, resulting from interactions between system dynamics and player actions.",
+    "dimension_decision": [
+      "decision-driven",
+      "knowledge-constrained",
+      "externally-driven",
+      "systemic"
+    ]
+  },
+  {
+    "dimension_id": "D3",
+    "dimension_parent": "F2",
+    "dimension_description": "This dimension describes when and how system constraints are exposed through visualization, allowing players to perceive the conditions under which failure occurs.",
+    "dimension_decision": [
+      "explicit visual marks",
+      "implicit indicators",
+      "post-hoc consequences"
+    ]
+  },
+  {
+    "dimension_id": "D4",
+    "dimension_parent": "F2",
+    "dimension_description": "This dimension describes how failure is encoded into perceivable and interpretable outcomes that can be recognized by players.",
+    "dimension_decision": [
+      "comparative performance",
+      "evaluative feedback",
+      "difficulty mapping"
+    ]
+  },
+  {
+    "dimension_id": "D5",
+    "dimension_parent": "F3",
+    "dimension_description": "This dimension describes how players use their agency to make adjustments based on their existing understanding and attribution, in order to attempt to improve outcomes.",
+    "dimension_decision": [
+      "parameter tuning",
+      "scope & filtering selection",
+      "action sequence modification",
+      "strategy reconfiguration"
+    ]
+  },
+  {
+    "dimension_id": "D6",
+    "dimension_parent": "F3",
+    "dimension_description": "This dimension describes how players gradually develop a deeper understanding of failure through interaction with the system, enabling them to identify valid outcomes as well as the underlying rules and patterns of the system.",
+    "dimension_decision": [
+      "iterative experimentation",
+      "hypothesis testing"
+    ]
+  },
+  {
+    "dimension_id": "D7",
+    "dimension_parent": "F3",
+    "dimension_description": "This dimension describes the process by which players define and reinterpret the causes and meanings of failure after forming an understanding of it.",
+    "dimension_decision": [
+      "perspective shifting",
+      "criteria reweighting"
+    ]
+  }
+]

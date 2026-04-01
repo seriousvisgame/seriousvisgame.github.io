@@ -1,0 +1,128 @@
+[
+  {
+    "decision_id": "E1",
+    "decision_parent": "D1",
+    "decision_description": "It refers to cases where the outcome of failure is already determined by the underlying data or model before the game begins.",
+    "picname": "InevitableSuperRich"
+  },
+  {
+    "decision_id": "E2",
+    "decision_parent": "D1",
+    "decision_description": "It refers to cases where numerical constraints such as limited total resources or capped indicators restrict players to optimizing within a limited range and prevent them from achieving success.",
+    "picname": "TheEn-ROADS"
+  },
+  {
+    "decision_id": "E3",
+    "decision_parent": "D1",
+    "decision_description": "It refers to cases where variables are interdependent and impose trade-offs, such that improvements in one metric come at the expense of others and multiple metrics cannot simultaneously reach their ideal states.",
+    "picname": "EducateYourChild"
+  },
+  {
+    "decision_id": "E4",
+    "decision_parent": "D2",
+    "decision_description": "It refers to cases where suboptimal player decisions lead to failure, such as ineffective strategies or inappropriate sequencing of actions.",
+    "picname": "TheNestEggGame"
+  },
+  {
+    "decision_id": "E5",
+    "decision_parent": "D2",
+    "decision_description": "It refers to cases where players lack sufficient background knowledge or an adequate understanding of system rules when making decisions.",
+    "picname": "SalubriousGuess"
+  },
+  {
+    "decision_id": "E6",
+    "decision_parent": "D2",
+    "decision_description": "It refers to cases where failure arises from factors beyond the player's control, such as the actions of others, particularly in collaborative contexts.",
+    "picname": "PeopleofthePandemic"
+  },
+  {
+    "decision_id": "E7",
+    "decision_parent": "D2",
+    "decision_description": "It refers to cases where certain goals remain difficult to achieve even with well-reasoned decisions due to inherent structural constraints of the system.",
+    "picname": "InevitableSuperRich"
+  },
+  {
+    "decision_id": "E8",
+    "decision_parent": "D3",
+    "decision_description": "It describes cases where constraints are directly represented through visualization elements such as threshold lines, upper bounds, or warning indicators, allowing players to clearly perceive them prior to interaction.",
+    "picname": "USPresidentialElectiony"
+  },
+  {
+    "decision_id": "E9",
+    "decision_parent": "D3",
+    "decision_description": "It describes cases where failure conditions are not directly represented, but are indirectly reflected through changes in data or indicators, such as curve trends, slowing growth, or diminishing effects, allowing players to gradually perceive these constraints during interaction.",
+    "picname": "TheEn-ROADS"
+  },
+  {
+    "decision_id": "E10",
+    "decision_parent": "D3",
+    "decision_description": "It refers to cases where the system does not explicitly present constraints in advance, but instead reveals them when certain conditions are met through outcomes such as game termination or revealing the correct answers.",
+    "picname": "CollegeChancesbyIncome"
+  },
+  {
+    "decision_id": "E11",
+    "decision_parent": "D4",
+    "decision_description": "It describes cases where failure is not treated as an independent outcome, but is instead reflected through the relative gap between the player and a target or other players, such as scores, rankings, or progress, allowing players to perceive their distance from success within a comparative frame.",
+    "picname": "SalubriousGuess"
+  },
+  {
+    "decision_id": "E12",
+    "decision_parent": "D4",
+    "decision_description": "It describes cases where failure functions as immediate feedback on the results of current actions, signaling unmet goals and guiding players to adjust their strategies based on these outcomes, thereby gradually improving their behavior.",
+    "picname": "51sprints"
+  },
+  {
+    "decision_id": "E13",
+    "decision_parent": "D4",
+    "decision_description": "It captures cases where the scale and frequency of failure are treated as quantifiable degrees, often reflected through the time and effort players must expend to overcome repeated setbacks.",
+    "picname": "AbortionMazes"
+  },
+  {
+    "decision_id": "E14",
+    "decision_parent": "D5",
+    "decision_description": "It involves improving outcomes by adjusting numerical variables or system parameters, such as changing resource proportions, policy intensity, or other controllable parameters, thereby optimizing current performance.",
+    "picname": "BirthControlMeasures"
+  },
+  {
+    "decision_id": "E15",
+    "decision_parent": "D5",
+    "decision_description": "It involves adjusting decisions by changing the subset of data under consideration, such as selecting different regions, groups, or time intervals, or applying different filtering conditions to obtain diverse results.",
+    "picname": "ToBuildaBetterBallot"
+  },
+  {
+    "decision_id": "E16",
+    "decision_parent": "D5",
+    "decision_description": "It involves exploring alternative strategies by revising the timing or order of actions, such as rearranging policy implementation schedules or adjusting action timing to pursue different effects.",
+    "picname": "HeartSaver"
+  },
+  {
+    "decision_id": "E17",
+    "decision_parent": "D5",
+    "decision_description": "It involves exploring possible solutions by combining different strategies or options, and optimizing decisions by comparing outcome differences across various combinations.",
+    "picname": "TheNestEggGame"
+  },
+  {
+    "decision_id": "E18",
+    "decision_parent": "D6",
+    "decision_description": "It involves exploring different pathways through repeated attempts and continuous experimentation, thereby gradually accumulating an understanding of system behavior, variable relationships, and the issue itself.",
+    "picname": "HeartSaver"
+  },
+  {
+    "decision_id": "E19",
+    "decision_parent": "D6",
+    "decision_description": "It involves approaching reasonable decisions by estimating or inferring possible outcomes under conditions of incomplete information, while helping players develop familiarity with relevant domain knowledge.",
+    "picname": "CollegeChancesbyIncome"
+  },
+  {
+    "decision_id": "E20",
+    "decision_parent": "D7",
+    "decision_description": "It involves reinterpreting the problem by shifting the represented role or standpoint, reattributing failure to different groups or situational conditions, and reassessing failure from a new perspective.",
+    "picname": "EducateYourChild"
+  },
+  {
+    "decision_id": "E21",
+    "decision_parent": "D7",
+    "decision_description": "It involves interpreting failure as arising from conflicts among multiple goals, and thus adjusting the priority among different objectives to redefine the criteria for what counts as success, thereby reshaping the meaning of failure.",
+    "picname": "51sprints"
+  }
+]

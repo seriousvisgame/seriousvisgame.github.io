@@ -2,13 +2,13 @@
 
 :root {
   color-scheme: light;
-  --bg: #f7f3ee;
-  --ink: #1f1a15;
-  --muted: #6b5f52;
-  --accent: #ea6b4d;
-  --accent-2: #f2c14e;
-  --panel: #fff9f2;
-  --shadow: 0 20px 40px rgba(31, 26, 21, 0.12);
+  --bg: #e9f5f2;
+  --ink: #123f37;
+  --muted: #517870;
+  --accent: #7bc6b9;
+  --accent-2: #bfe6df;
+  --panel: #f6fffd;
+  --shadow: 0 20px 40px rgba(18, 63, 55, 0.12);
 }
 
 * {
@@ -20,16 +20,16 @@ body {
   min-height: 100vh;
   font-family: 'Space Grotesk', system-ui, sans-serif;
   color: var(--ink);
-  background: radial-gradient(circle at top left, #ffe8d1 0%, transparent 45%),
-    radial-gradient(circle at 80% 10%, #fde2d7 0%, transparent 40%),
+  background: radial-gradient(circle at top left, #e0f4f0 0%, transparent 48%),
+    radial-gradient(circle at 85% 15%, #d2efe9 0%, transparent 42%),
     var(--bg);
 }
 
 .bg-glow {
   position: fixed;
   inset: 0;
-  background: linear-gradient(140deg, rgba(234, 107, 77, 0.08), transparent 60%),
-    linear-gradient(240deg, rgba(242, 193, 78, 0.08), transparent 60%);
+  background: linear-gradient(140deg, rgba(123, 198, 185, 0.16), transparent 60%),
+    linear-gradient(240deg, rgba(191, 230, 223, 0.16), transparent 60%);
   pointer-events: none;
   z-index: -1;
 }
@@ -56,7 +56,7 @@ body {
   display: grid;
   place-items: center;
   font-weight: 600;
-  background: linear-gradient(140deg, var(--accent), #f49e7b);
+  background: linear-gradient(140deg, var(--accent), #a9ddd3);
   color: #fff;
   box-shadow: var(--shadow);
 }

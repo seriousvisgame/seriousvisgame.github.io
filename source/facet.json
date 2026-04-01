@@ -1,0 +1,30 @@
+[
+  {
+    "facet_id": "F1",
+    "facet_name": "Failure Emergence",
+    "facet_description": "Failure emergence refers to how failure arises inherently from data structures and system rules, focusing on the structural constraints that characterize failure and the conditions under which it is triggered.",
+    "facet_dimension": [
+      "Structural Constraints",
+      "Triggering Conditions"
+    ]
+  },
+  {
+    "facet_id": "F2",
+    "facet_name": "Failure Experience",
+    "facet_description": "Failure experience refers to how systems represent failure in perceptible and interpretable forms, enabling players to perceive constraints and understand failure outcomes by presenting pre-failure constraints and encoding failure.",
+    "facet_dimension": [
+      "Constraints Presentation",
+      "Failure Encoding"
+    ]
+  },
+  {
+    "facet_id": "F3",
+    "facet_name": "Failure Response",
+    "facet_description": "Failure response refers to how players react to failure and take subsequent actions to adjust, understand, and reassess it, including action adjustment, exploratory learning, and interpretive reframing.",
+    "facet_dimension": [
+      "Action Adjustment",
+      "Exploratory Learning",
+      "Interpretive Reframing"
+    ]
+  }
+]
