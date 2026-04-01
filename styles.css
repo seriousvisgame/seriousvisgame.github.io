@@ -108,11 +108,11 @@ body {
 
 .panel {
   display: none;
-  background: var(--panel);
-  border-radius: 28px;
-  padding: 36px;
-  box-shadow: var(--shadow);
-  border: 1px solid rgba(31, 26, 21, 0.08);
+  background: transparent;
+  border-radius: 0;
+  padding: 16px 0 0;
+  box-shadow: none;
+  border: none;
   animation: fadeIn 0.4s ease;
 }
 
@@ -159,6 +159,6 @@ body {
   }
 
   .panel {
-    padding: 28px;
+    padding: 12px 0 0;
   }
 }
