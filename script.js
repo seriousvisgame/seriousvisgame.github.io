@@ -1,5 +1,6 @@
 const tabs = document.querySelectorAll('.tab');
 const pageContainer = document.querySelector('#page-container');
+const ACTIVE_PAGE_KEY = 'svg-active-page';
 
 const setActiveTab = (targetId) => {
   tabs.forEach((tab) => {
@@ -23,11 +24,13 @@ const loadPage = async (page) => {
     panel.setAttribute('aria-hidden', 'false');
   }
   initConstruction();
+  initCorpus();
 };
 
 const activate = async (tab) => {
   const targetId = tab.dataset.target;
   setActiveTab(targetId);
+  window.sessionStorage.setItem(ACTIVE_PAGE_KEY, tab.dataset.page);
   await loadPage(tab.dataset.page);
 };
 
@@ -36,8 +39,6 @@ tabs.forEach((tab) => {
     activate(tab);
   });
 });
-
-activate(document.querySelector('.tab.is-active'));
 
 const initConstruction = () => {
   const sidebar = document.querySelector('.sidebar');
@@ -142,3 +143,139 @@ const initConstruction = () => {
     setActiveLink(`#${sections[0].id}`);
   }
 };
+
+const initCorpus = async () => {
+  const grid = document.querySelector('#corpus-grid');
+  if (!grid) return;
+
+  grid.innerHTML = `
+    <section class="corpus-empty">
+      <h2>Loading corpus...</h2>
+      <p>Reading <code>source/corpus.json</code>.</p>
+    </section>
+  `;
+  const facetMap = {
+    'Structural Constraints': 'facet-f1',
+    'Triggering Conditions': 'facet-f1',
+    'Constraints Presentation': 'facet-f2',
+    'Failure Encoding': 'facet-f2',
+    'Action Adjustment': 'facet-f3',
+    'Exploratory Learning': 'facet-f3',
+    'Interpretive Reframing': 'facet-f3',
+  };
+
+  const designColumns = Object.keys(facetMap);
+
+  try {
+    const response = await fetch('source/corpus.json');
+    if (!response.ok) {
+      throw new Error('Failed to load corpus data');
+    }
+
+    const items = await response.json();
+    grid.innerHTML = '';
+    items.forEach((item) => {
+      const article = document.createElement('article');
+      article.className = 'corpus-card';
+
+      const topRow = document.createElement('div');
+      topRow.className = 'corpus-top-row';
+
+      const idBadge = document.createElement('span');
+      idBadge.className = 'corpus-id-badge';
+      idBadge.textContent = item.ID;
+      topRow.appendChild(idBadge);
+
+      const name = document.createElement('h2');
+      name.className = 'corpus-name';
+      name.textContent = item.name || 'Untitled';
+      topRow.appendChild(name);
+      article.appendChild(topRow);
+
+      const image = document.createElement('img');
+      image.className = 'corpus-image';
+      image.src = `images/corpus_img/${item.ID}.png`;
+      image.alt = item.name || 'Corpus image';
+      image.loading = 'lazy';
+      article.appendChild(image);
+
+      if (item.year) {
+        const year = document.createElement('span');
+        year.className = 'corpus-meta-pill';
+        year.textContent = item.year;
+        article.appendChild(year);
+      }
+
+      if (item.title) {
+        const title = document.createElement('p');
+        title.className = 'corpus-title';
+        title.innerHTML = '<strong>Title:</strong> ';
+
+        const titleValue = document.createElement('span');
+        titleValue.textContent = item.title;
+        title.appendChild(titleValue);
+        article.appendChild(title);
+      }
+
+      const linkRow = document.createElement('p');
+      linkRow.className = 'corpus-link-row';
+      linkRow.innerHTML = '<strong>Link:</strong> ';
+
+      if (item.link) {
+        const link = document.createElement('a');
+        link.className = 'corpus-link';
+        link.href = item.link;
+        link.target = '_blank';
+        link.rel = 'noreferrer';
+        link.textContent = 'Here';
+        linkRow.appendChild(link);
+      } else {
+        const noLink = document.createElement('span');
+        noLink.textContent = 'N/A';
+        linkRow.appendChild(noLink);
+      }
+
+      article.appendChild(linkRow);
+
+      const tags = document.createElement('div');
+      tags.className = 'corpus-tags';
+
+      designColumns.forEach((column) => {
+        const rawValue = item[column];
+        const values = Array.isArray(rawValue) ? rawValue : [rawValue];
+
+        values.filter(Boolean).forEach((value) => {
+          const tag = document.createElement('span');
+          tag.className = `corpus-tag ${facetMap[column]}`;
+          tag.textContent = value;
+          tags.appendChild(tag);
+        });
+      });
+
+      article.appendChild(tags);
+      grid.appendChild(article);
+    });
+  } catch (error) {
+    grid.innerHTML = `
+      <section class="corpus-empty">
+        <h2>Corpus unavailable</h2>
+        <p>Could not load <code>source/corpus.json</code>: ${error.message}</p>
+      </section>
+    `;
+  }
+};
+
+const getInitialTab = () => {
+  const savedPage = window.sessionStorage.getItem(ACTIVE_PAGE_KEY);
+  const savedTab = savedPage
+    ? document.querySelector(`.tab[data-page="${savedPage}"]`)
+    : null;
+
+  if (savedTab) {
+    return savedTab;
+  }
+
+  return document.querySelector('.tab.is-active');
+};
+
+activate(getInitialTab());
