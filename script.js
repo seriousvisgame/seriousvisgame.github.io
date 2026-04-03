@@ -25,6 +25,7 @@ const loadPage = async (page) => {
   }
   initConstruction();
   initCorpus();
+  initWorkshop();
 };
 
 const activate = async (tab) => {
@@ -263,6 +264,92 @@ const initCorpus = async () => {
       </section>
     `;
   }
+};
+
+const initWorkshop = () => {
+  const grid = document.querySelector('#workshop-grid');
+  const lightbox = document.querySelector('#workshop-lightbox');
+  if (!grid || !lightbox) return;
+
+  const title = document.querySelector('#workshop-lightbox-title');
+  const imageContainer = document.querySelector('#workshop-lightbox-images');
+  const closeButton = document.querySelector('#workshop-lightbox-close');
+
+  const closeLightbox = () => {
+    lightbox.classList.remove('is-open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    imageContainer.innerHTML = '';
+  };
+
+  const openLightbox = (card) => {
+    const groupId = card.dataset.group || '';
+    const images = Array.from(card.querySelectorAll('.workshop-card-image'));
+
+    title.textContent = `Group ${groupId}`;
+    imageContainer.innerHTML = '';
+
+    images.forEach((sourceImage) => {
+      const img = document.createElement('img');
+      img.src = sourceImage.src;
+      img.alt = sourceImage.alt || `Group ${groupId}`;
+      img.loading = 'lazy';
+      imageContainer.appendChild(img);
+    });
+
+    lightbox.classList.add('is-open');
+    lightbox.setAttribute('aria-hidden', 'false');
+  };
+
+  const layoutMasonry = () => {
+    const styles = window.getComputedStyle(grid);
+    const rowHeight = Number.parseFloat(styles.getPropertyValue('grid-auto-rows'));
+    const gap = Number.parseFloat(styles.getPropertyValue('gap'));
+    if (!rowHeight) return;
+
+    const cards = grid.querySelectorAll('.workshop-card');
+    cards.forEach((card) => {
+      card.style.gridRowEnd = 'auto';
+      const span = Math.ceil((card.getBoundingClientRect().height + gap) / (rowHeight + gap));
+      card.style.gridRowEnd = `span ${span}`;
+    });
+  };
+
+  const cards = grid.querySelectorAll('.workshop-card');
+  cards.forEach((card) => {
+    card.onclick = () => openLightbox(card);
+    card.onkeydown = (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        openLightbox(card);
+      }
+    };
+
+    const images = card.querySelectorAll('.workshop-card-image');
+    images.forEach((image) => {
+      image.addEventListener('load', layoutMasonry, { once: true });
+    });
+  });
+
+  layoutMasonry();
+  window.requestAnimationFrame(layoutMasonry);
+
+  if (!grid.dataset.masonryBound) {
+    window.addEventListener('resize', layoutMasonry);
+    grid.dataset.masonryBound = 'true';
+  }
+
+  closeButton.onclick = closeLightbox;
+  lightbox.onclick = (event) => {
+    if (event.target instanceof HTMLElement && event.target.dataset.close === 'true') {
+      closeLightbox();
+    }
+  };
+
+  document.onkeydown = (event) => {
+    if (event.key === 'Escape' && lightbox.classList.contains('is-open')) {
+      closeLightbox();
+    }
+  };
 };
 
 const getInitialTab = () => {

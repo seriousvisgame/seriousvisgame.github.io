@@ -2,7 +2,7 @@
 
 :root {
   color-scheme: light;
-  --bg: #e9f5f2;
+  --bg: #ffffff;
   --ink: #123f37;
   --muted: #517870;
   --accent: #7bc6b9;
@@ -30,16 +30,13 @@ body {
   min-height: 100vh;
   font-family: 'Space Grotesk', system-ui, sans-serif;
   color: var(--ink);
-  background: radial-gradient(circle at top left, #e0f4f0 0%, transparent 48%),
-    radial-gradient(circle at 85% 15%, #d2efe9 0%, transparent 42%),
-    var(--bg);
+  background: var(--bg);
 }
 
 .bg-glow {
   position: fixed;
   inset: 0;
-  background: linear-gradient(140deg, rgba(123, 198, 185, 0.16), transparent 60%),
-    linear-gradient(240deg, rgba(191, 230, 223, 0.16), transparent 60%);
+  background: transparent;
   pointer-events: none;
   z-index: -1;
 }
@@ -276,6 +273,120 @@ body {
   border: 1px solid rgba(18, 63, 55, 0.1);
 }
 
+.workshop-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.workshop-header {
+  max-width: 760px;
+}
+
+.workshop-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  align-items: start;
+  grid-auto-rows: 8px;
+}
+
+.workshop-card {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 18px;
+  border: 1px solid rgba(18, 63, 55, 0.12);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 18px 36px rgba(18, 63, 55, 0.08);
+  cursor: pointer;
+  text-align: left;
+}
+
+.workshop-card h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  margin-bottom: 14px;
+}
+
+.workshop-card-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.workshop-card-image {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+  border: 1px solid rgba(18, 63, 55, 0.08);
+  background: #fff;
+}
+
+.workshop-lightbox {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  z-index: 20;
+}
+
+.workshop-lightbox.is-open {
+  display: flex;
+}
+
+.workshop-lightbox-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(18, 63, 55, 0.42);
+  backdrop-filter: blur(3px);
+}
+
+.workshop-lightbox-dialog {
+  position: relative;
+  width: min(1080px, 100%);
+  max-height: calc(100vh - 56px);
+  overflow: auto;
+  padding: 24px;
+  border-radius: 28px;
+  background: #fff;
+  box-shadow: 0 24px 50px rgba(18, 63, 55, 0.18);
+}
+
+.workshop-lightbox-close {
+  position: sticky;
+  top: 0;
+  margin-left: auto;
+  display: block;
+  padding: 8px 12px;
+  border: 1px solid rgba(18, 63, 55, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.workshop-lightbox-dialog h2 {
+  margin: 8px 0 18px;
+  font-size: 1.4rem;
+}
+
+.workshop-lightbox-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.workshop-lightbox-images img {
+  width: 100%;
+  display: block;
+  border-radius: 18px;
+  border: 1px solid rgba(18, 63, 55, 0.08);
+}
+
 .construction-layout {
   display: grid;
   grid-template-columns: minmax(220px, 260px) minmax(0, 1fr);
@@ -510,6 +621,10 @@ body {
   .decision-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .workshop-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 720px) {
@@ -537,6 +652,19 @@ body {
 
   .corpus-card {
     padding: 16px;
+  }
+
+  .workshop-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .workshop-lightbox {
+    padding: 16px;
+  }
+
+  .workshop-lightbox-dialog {
+    padding: 18px;
+    max-height: calc(100vh - 32px);
   }
 
   .construction-layout {

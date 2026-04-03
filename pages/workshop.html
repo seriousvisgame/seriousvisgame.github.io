@@ -1,4 +1,87 @@
-<section class="panel" role="tabpanel">
-  <h1>Workshop</h1>
-  <p>空白页：这里将展示 Workshop 的内容。</p>
+<section class="panel workshop-panel" role="tabpanel">
+  <!-- <div class="workshop-header">
+    <h1>Workshop</h1>
+    <p>Grouped workshop outputs arranged in a masonry gallery. Select a group to view a larger version.</p>
+  </div> -->
+  <div id="workshop-grid" class="workshop-grid" aria-live="polite">
+    <article class="workshop-card" tabindex="0" data-group="1">
+      <h2>Group 1</h2>
+      <div class="workshop-card-stack">
+        <img class="workshop-card-image" src="images/workshop_img/1.jpg" alt="Group 1" loading="lazy" />
+        <img class="workshop-card-image" src="images/workshop_img/1-2.jpg" alt="Group 1" loading="lazy" />
+      </div>
+    </article>
+    <article class="workshop-card" tabindex="0" data-group="2">
+      <h2>Group 2</h2>
+      <div class="workshop-card-stack">
+        <img class="workshop-card-image" src="images/workshop_img/2.jpg" alt="Group 2" loading="lazy" />
+      </div>
+    </article>
+    <article class="workshop-card" tabindex="0" data-group="3">
+      <h2>Group 3</h2>
+      <div class="workshop-card-stack">
+        <img class="workshop-card-image" src="images/workshop_img/3.jpg" alt="Group 3" loading="lazy" />
+      </div>
+    </article>
+    <article class="workshop-card" tabindex="0" data-group="4">
+      <h2>Group 4</h2>
+      <div class="workshop-card-stack">
+        <img class="workshop-card-image" src="images/workshop_img/4.jpg" alt="Group 4" loading="lazy" />
+        <img class="workshop-card-image" src="images/workshop_img/4-2.jpg" alt="Group 4" loading="lazy" />
+      </div>
+    </article>
+    <article class="workshop-card" tabindex="0" data-group="5">
+      <h2>Group 5</h2>
+      <div class="workshop-card-stack">
+        <img class="workshop-card-image" src="images/workshop_img/5.jpg" alt="Group 5" loading="lazy" />
+      </div>
+    </article>
+    <article class="workshop-card" tabindex="0" data-group="6">
+      <h2>Group 6</h2>
+      <div class="workshop-card-stack">
+        <img class="workshop-card-image" src="images/workshop_img/6.jpg" alt="Group 6" loading="lazy" />
+        <img class="workshop-card-image" src="images/workshop_img/6-2.jpg" alt="Group 6" loading="lazy" />
+      </div>
+    </article>
+    <article class="workshop-card" tabindex="0" data-group="7">
+      <h2>Group 7</h2>
+      <div class="workshop-card-stack">
+        <img class="workshop-card-image" src="images/workshop_img/7.jpg" alt="Group 7" loading="lazy" />
+        <img class="workshop-card-image" src="images/workshop_img/7-2.jpg" alt="Group 7" loading="lazy" />
+      </div>
+    </article>
+    <article class="workshop-card" tabindex="0" data-group="8">
+      <h2>Group 8</h2>
+      <div class="workshop-card-stack">
+        <img class="workshop-card-image" src="images/workshop_img/8.jpg" alt="Group 8" loading="lazy" />
+      </div>
+    </article>
+    <article class="workshop-card" tabindex="0" data-group="9">
+      <h2>Group 9</h2>
+      <div class="workshop-card-stack">
+        <img class="workshop-card-image" src="images/workshop_img/9.jpg" alt="Group 9" loading="lazy" />
+      </div>
+    </article>
+    <article class="workshop-card" tabindex="0" data-group="10">
+      <h2>Group 10</h2>
+      <div class="workshop-card-stack">
+        <img class="workshop-card-image" src="images/workshop_img/10.jpg" alt="Group 10" loading="lazy" />
+      </div>
+    </article>
+    <article class="workshop-card" tabindex="0" data-group="11">
+      <h2>Group 11</h2>
+      <div class="workshop-card-stack">
+        <img class="workshop-card-image" src="images/workshop_img/11.jpg" alt="Group 11" loading="lazy" />
+      </div>
+    </article>
+  </div>
+
+  <div id="workshop-lightbox" class="workshop-lightbox" aria-hidden="true">
+    <div class="workshop-lightbox-backdrop" data-close="true"></div>
+    <div class="workshop-lightbox-dialog" role="dialog" aria-modal="true" aria-labelledby="workshop-lightbox-title">
+      <button id="workshop-lightbox-close" class="workshop-lightbox-close" type="button" aria-label="Close preview">Close</button>
+      <h2 id="workshop-lightbox-title"></h2>
+      <div id="workshop-lightbox-images" class="workshop-lightbox-images"></div>
+    </div>
+  </div>
 </section>
