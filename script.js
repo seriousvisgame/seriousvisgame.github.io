@@ -155,10 +155,11 @@ const initCorpus = async () => {
       <p>Reading <code>source/corpus.json</code>.</p>
     </section>
   `;
+
   const facetMap = {
-    'Structural Constraints': 'facet-f1',
+    'Structural Limits': 'facet-f1',
     'Triggering Conditions': 'facet-f1',
-    'Constraints Presentation': 'facet-f2',
+    'Constraints Visualizing': 'facet-f2',
     'Failure Encoding': 'facet-f2',
     'Action Adjustment': 'facet-f3',
     'Exploratory Learning': 'facet-f3',
@@ -166,6 +167,14 @@ const initCorpus = async () => {
   };
 
   const designColumns = Object.keys(facetMap);
+  const backFields = [
+    'Topic',
+    'Data',
+    'Game Goal',
+    'Game Mechanics',
+    'Failure Trigger',
+    'Visualization Strategy',
+  ];
 
   try {
     const response = await fetch('source/corpus.json');
@@ -175,9 +184,19 @@ const initCorpus = async () => {
 
     const items = await response.json();
     grid.innerHTML = '';
+
     items.forEach((item) => {
       const article = document.createElement('article');
       article.className = 'corpus-card';
+
+      const flipInner = document.createElement('div');
+      flipInner.className = 'corpus-card-inner';
+
+      const front = document.createElement('section');
+      front.className = 'corpus-face corpus-face-front';
+
+      const back = document.createElement('section');
+      back.className = 'corpus-face corpus-face-back';
 
       const topRow = document.createElement('div');
       topRow.className = 'corpus-top-row';
@@ -191,20 +210,20 @@ const initCorpus = async () => {
       name.className = 'corpus-name';
       name.textContent = item.name || 'Untitled';
       topRow.appendChild(name);
-      article.appendChild(topRow);
+      front.appendChild(topRow);
 
       const image = document.createElement('img');
       image.className = 'corpus-image';
       image.src = `images/corpus_img/${item.ID}.png`;
       image.alt = item.name || 'Corpus image';
       image.loading = 'lazy';
-      article.appendChild(image);
+      front.appendChild(image);
 
       if (item.year) {
         const year = document.createElement('span');
         year.className = 'corpus-meta-pill';
         year.textContent = item.year;
-        article.appendChild(year);
+        front.appendChild(year);
       }
 
       if (item.title) {
@@ -215,7 +234,7 @@ const initCorpus = async () => {
         const titleValue = document.createElement('span');
         titleValue.textContent = item.title;
         title.appendChild(titleValue);
-        article.appendChild(title);
+        front.appendChild(title);
       }
 
       const linkRow = document.createElement('p');
@@ -236,7 +255,18 @@ const initCorpus = async () => {
         linkRow.appendChild(noLink);
       }
 
-      article.appendChild(linkRow);
+      front.appendChild(linkRow);
+
+      if (item['Failure Forms']) {
+        const failureForms = document.createElement('p');
+        failureForms.className = 'corpus-failure-forms';
+        failureForms.innerHTML = '<strong>Failure Forms:</strong> ';
+
+        const failureFormsValue = document.createElement('span');
+        failureFormsValue.textContent = item['Failure Forms'];
+        failureForms.appendChild(failureFormsValue);
+        front.appendChild(failureForms);
+      }
 
       const tags = document.createElement('div');
       tags.className = 'corpus-tags';
@@ -253,7 +283,73 @@ const initCorpus = async () => {
         });
       });
 
-      article.appendChild(tags);
+      front.appendChild(tags);
+
+      const backHeader = document.createElement('div');
+      backHeader.className = 'corpus-back-header';
+
+      const backTitle = document.createElement('h3');
+      backTitle.className = 'corpus-back-title';
+      backTitle.textContent = item.name || 'Untitled';
+      backHeader.appendChild(backTitle);
+      back.appendChild(backHeader);
+
+      const backBody = document.createElement('div');
+      backBody.className = 'corpus-back-body';
+
+      backFields.forEach((field) => {
+        if (!item[field]) return;
+
+        const row = document.createElement('div');
+        row.className = 'corpus-back-row';
+
+        const label = document.createElement('div');
+        label.className = 'corpus-back-label';
+        label.textContent = field;
+
+        const value = document.createElement('div');
+        value.className = 'corpus-back-value';
+        value.textContent = item[field];
+
+        row.appendChild(label);
+        row.appendChild(value);
+        backBody.appendChild(row);
+      });
+
+      back.appendChild(backBody);
+
+      const controls = document.createElement('div');
+      controls.className = 'corpus-card-controls';
+
+      const frontButton = document.createElement('button');
+      frontButton.type = 'button';
+      frontButton.className = 'corpus-flip-button';
+      frontButton.textContent = 'More';
+
+      const backButton = document.createElement('button');
+      backButton.type = 'button';
+      backButton.className = 'corpus-flip-button';
+      backButton.textContent = 'Back';
+
+      frontButton.addEventListener('click', () => {
+        article.classList.add('is-flipped');
+      });
+
+      backButton.addEventListener('click', () => {
+        article.classList.remove('is-flipped');
+      });
+
+      controls.appendChild(frontButton);
+      front.appendChild(controls);
+
+      const backControls = document.createElement('div');
+      backControls.className = 'corpus-card-controls';
+      backControls.appendChild(backButton);
+      back.appendChild(backControls);
+
+      flipInner.appendChild(front);
+      flipInner.appendChild(back);
+      article.appendChild(flipInner);
       grid.appendChild(article);
     });
   } catch (error) {
