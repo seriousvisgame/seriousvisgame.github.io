@@ -1,5 +1,6 @@
 [
   {
+    "ID": "1",
     "name": "U.S. Vaccination Timeline",
     "link": "https://www.reuters.com/graphics/HEALTH-CORONAVIRUS/VACCINE-CALCULATOR/rlgvdgewwpo/",
     "year": "2021",
@@ -17,10 +18,10 @@
     "Failure Encoding": "Comparative performance",
     "Action Adjustment": "Parameter tuning",
     "Exploratory Learning": null,
-    "Interpretive Reframing": "Perspective shifting",
-    "ID": "1"
+    "Interpretive Reframing": "Perspective shifting"
   },
   {
+    "ID": "2",
     "name": "Birth Control Measures",
     "link": "https://www.volkskrant.nl/kijkverder/2018/wereldbevolking/?referrer=https%3A%2F%2Ft.co%2FOAoltOfopb&referrer=https%3A%2F%2Fidvxlab.com%2F",
     "year": "2018",
@@ -38,10 +39,10 @@
     "Failure Encoding": "Comparative performance",
     "Action Adjustment": "Parameter tuning",
     "Exploratory Learning": null,
-    "Interpretive Reframing": null,
-    "ID": "2"
+    "Interpretive Reframing": null
   },
   {
+    "ID": "3",
     "name": "Who’s in the Crossword?",
     "link": "https://pudding.cool/2020/11/crossword/",
     "year": "2020",
@@ -59,10 +60,10 @@
     "Failure Encoding": "Difficulty mapping",
     "Action Adjustment": null,
     "Exploratory Learning": "Hypothesis testing",
-    "Interpretive Reframing": "Perspective shifting",
-    "ID": "3"
+    "Interpretive Reframing": "Perspective shifting"
   },
   {
+    "ID": "4",
     "name": "Abortion Mazes",
     "link": "https://pudding.cool/2024/10/abortion-mazes/",
     "year": "2024",
@@ -80,10 +81,10 @@
     "Failure Encoding": "Difficulty mapping",
     "Action Adjustment": null,
     "Exploratory Learning": "Iterative experimentation",
-    "Interpretive Reframing": "Perspective shifting",
-    "ID": "4"
+    "Interpretive Reframing": "Perspective shifting"
   },
   {
+    "ID": "5",
     "name": "Inevitable Super Rich",
     "link": "https://pudding.cool/2022/12/yard-sale/?",
     "year": "2023",
@@ -101,10 +102,10 @@
     "Failure Encoding": "Evaluative feedback",
     "Action Adjustment": null,
     "Exploratory Learning": "Iterative experimentation",
-    "Interpretive Reframing": null,
-    "ID": "5"
+    "Interpretive Reframing": null
   },
   {
+    "ID": "6",
     "name": "People of the Pandemic",
     "link": "https://peopleofthepandemicgame.com/",
     "year": "2022",
@@ -125,10 +126,10 @@
     "Failure Encoding": "Comparative performance",
     "Action Adjustment": "Parameter tuning",
     "Exploratory Learning": null,
-    "Interpretive Reframing": null,
-    "ID": "6"
+    "Interpretive Reframing": null
   },
   {
+    "ID": "7",
     "name": "The Wheel of Inequality",
     "link": "https://www.eldiario.es/sociedad/segregados-rueda-desigualdad-ver-barrio-nivel-estudios_1_10703668.html",
     "year": "2024",
@@ -146,10 +147,10 @@
     "Failure Encoding": "Comparative performance",
     "Action Adjustment": "Strategy reconfiguration",
     "Exploratory Learning": null,
-    "Interpretive Reframing": "Criteria reweighting",
-    "ID": "7"
+    "Interpretive Reframing": "Criteria reweighting"
   },
   {
+    "ID": "8",
     "name": "51 Sprints",
     "link": "https://thefwa.com/cases/51-sprints-the-human-race?",
     "year": "2016",
@@ -167,10 +168,10 @@
     "Failure Encoding": "Evaluative feedback",
     "Action Adjustment": "Strategy reconfiguration",
     "Exploratory Learning": null,
-    "Interpretive Reframing": "Perspective shifting",
-    "ID": "8"
+    "Interpretive Reframing": "Perspective shifting"
   },
   {
+    "ID": "9",
     "name": "Educate Your Child",
     "link": "https://gabriellelamarrlemee.github.io/thesis-simulation/",
     "year": "2018",
@@ -188,10 +189,10 @@
     "Failure Encoding": "Comparative performance",
     "Action Adjustment": "Strategy reconfiguration",
     "Exploratory Learning": null,
-    "Interpretive Reframing": "Perspective shifting",
-    "ID": "9"
+    "Interpretive Reframing": "Perspective shifting"
   },
   {
+    "ID": "10",
     "name": "The Nest Egg Game",
     "link": "https://www.wsj.com/graphics/nest-egg-game/",
     "year": "2019",
@@ -209,10 +210,10 @@
     "Failure Encoding": "Comparative performance",
     "Action Adjustment": "Strategy reconfiguration",
     "Exploratory Learning": null,
-    "Interpretive Reframing": null,
-    "ID": "10"
+    "Interpretive Reframing": null
   },
   {
+    "ID": "11",
     "name": "HeartSaver",
     "link": "https://projects.propublica.org/graphics/heartsaver",
     "year": "2013",
@@ -230,10 +231,10 @@
     "Failure Encoding": "Comparative performance",
     "Action Adjustment": "Action sequence modification",
     "Exploratory Learning": "Iterative experimentation",
-    "Interpretive Reframing": null,
-    "ID": "11"
+    "Interpretive Reframing": null
   },
   {
+    "ID": "12",
     "name": "The En-ROADS",
     "link": "https://en-roads.climateinteractive.org/scenario.html?v=26.1.0",
     "year": "2026",
@@ -251,10 +252,10 @@
     "Failure Encoding": "Comparative performance",
     "Action Adjustment": "Parameter tuning",
     "Exploratory Learning": null,
-    "Interpretive Reframing": null,
-    "ID": "12"
+    "Interpretive Reframing": null
   },
   {
+    "ID": "13",
     "name": "The C-ROADS",
     "link": "https://c-roads.climateinteractive.org/scenario.html?v=26.1.0",
     "year": "2026",
@@ -272,10 +273,10 @@
     "Failure Encoding": "Comparative performance",
     "Action Adjustment": "Parameter tuning",
     "Exploratory Learning": null,
-    "Interpretive Reframing": null,
-    "ID": "13"
+    "Interpretive Reframing": null
   },
   {
+    "ID": "14",
     "name": "The Fiscal Ship",
     "link": "https://fiscalship.org/",
     "year": "2016",
@@ -293,10 +294,10 @@
     "Failure Encoding": "Comparative performance",
     "Action Adjustment": "Parameter tuning",
     "Exploratory Learning": null,
-    "Interpretive Reframing": "Criteria reweighting",
-    "ID": "14"
+    "Interpretive Reframing": "Criteria reweighting"
   },
   {
+    "ID": "15",
     "name": "Virus Growth",
     "link": "https://codap.concord.org/releases/latest/static/dg/zh-Hans/cert/index.html?di=https://concord-consortium.github.io/codap-data-interactives/Virus/Virus.html",
     "year": null,
@@ -314,10 +315,10 @@
     "Failure Encoding": "Comparative performance",
     "Action Adjustment": "Parameter tuning",
     "Exploratory Learning": null,
-    "Interpretive Reframing": null,
-    "ID": "15"
+    "Interpretive Reframing": null
   },
   {
+    "ID": "16",
     "name": "Parable of the Polygons",
     "link": "https://ncase.me/polygons/",
     "year": "2014",
@@ -335,56 +336,14 @@
     "Failure Encoding": "Evaluative feedback",
     "Action Adjustment": "Action sequence modification",
     "Exploratory Learning": "Iterative experimentation",
-    "Interpretive Reframing": null,
-    "ID": "16"
+    "Interpretive Reframing": null
   },
   {
+    "ID": "17",
     "name": "Salubrious Guess",
     "link": "https://dl.acm.org/doi/abs/10.1145/1978942.1979193",
     "year": "2011",
     "title": "Salubrious Guess",
-    "Topic": null,
-    "Data": null,
-    "Game Goal": null,
-    "Game Mechanics": null,
-    "Failure Trigger": null,
-    "Visualization Strategy": null,
-    "Failure Forms": null,
-    "Structural Limits": null,
-    "Triggering Conditions": null,
-    "Constraints Visualizing": null,
-    "Failure Encoding": null,
-    "Action Adjustment": null,
-    "Exploratory Learning": null,
-    "Interpretive Reframing": null,
-    "ID": "17"
-  },
-  {
-    "name": "Salubrious Nation",
-    "link": "https://dl.acm.org/doi/abs/10.1145/1978942.1979193",
-    "year": "2011",
-    "title": "Salubrious Nation 健康国度",
-    "Topic": null,
-    "Data": null,
-    "Game Goal": null,
-    "Game Mechanics": null,
-    "Failure Trigger": null,
-    "Visualization Strategy": null,
-    "Failure Forms": null,
-    "Structural Limits": null,
-    "Triggering Conditions": null,
-    "Constraints Visualizing": null,
-    "Failure Encoding": null,
-    "Action Adjustment": null,
-    "Exploratory Learning": null,
-    "Interpretive Reframing": null,
-    "ID": "18"
-  },
-  {
-    "name": "Trees of Trade",
-    "link": "https://dl.digra.org/index.php/dl/article/download/484/484",
-    "year": "2009",
-    "title": "Trees of Trade: Biodiversity and Extinction",
     "Topic": "Public health perception",
     "Data": "County Health Rankings, HHS health indicators, and U.S. Census county data",
     "Game Goal": "Guess health indicators for a target region",
@@ -398,14 +357,14 @@
     "Failure Encoding": "Comparative performance",
     "Action Adjustment": null,
     "Exploratory Learning": "Hypothesis testing",
-    "Interpretive Reframing": null,
-    "ID": "19"
+    "Interpretive Reframing": null
   },
   {
-    "name": "Tardware Tycoon",
-    "link": "https://haxor1337.itch.io/hardware-tycoon",
-    "year": null,
-    "title": "Tardware Tycoon",
+    "ID": "18",
+    "name": "Salubrious Nation",
+    "link": "https://dl.acm.org/doi/abs/10.1145/1978942.1979193",
+    "year": "2011",
+    "title": "Salubrious Nation 健康国度",
     "Topic": "Public health perception",
     "Data": "County Health Rankings, HHS health indicators, and U.S. Census county data",
     "Game Goal": "Guess health indicators for a target region",
@@ -419,14 +378,14 @@
     "Failure Encoding": "Comparative performance",
     "Action Adjustment": "Action sequence modification",
     "Exploratory Learning": "Hypothesis testing",
-    "Interpretive Reframing": null,
-    "ID": "20"
+    "Interpretive Reframing": null
   },
   {
-    "name": "Federal Balancing Act",
-    "link": "https://us.abalancingact.com/federal-budget-simulator",
-    "year": null,
-    "title": "Federal Balancing Act",
+    "ID": "19",
+    "name": "Trees of Trade",
+    "link": "https://dl.digra.org/index.php/dl/article/download/484/484",
+    "year": "2009",
+    "title": "Trees of Trade: Biodiversity and Extinction",
     "Topic": "Rainforest ecology and commercial development",
     "Data": "Atlantic Forest species, commodity, and endangerment relationship data",
     "Game Goal": "Reconstruct damaged forest relationships",
@@ -440,14 +399,14 @@
     "Failure Encoding": "Evaluative feedback",
     "Action Adjustment": "Action sequence modification",
     "Exploratory Learning": "Iterative experimentation",
-    "Interpretive Reframing": null,
-    "ID": "21"
+    "Interpretive Reframing": null
   },
   {
-    "name": "College Chances by Income",
-    "link": "https://www.nytimes.com/interactive/2015/05/28/upshot/you-draw-it-how-family-income-affects-childrens-college-chances.html",
-    "year": "2015",
-    "title": "You Draw It: How Family Income Predicts Children’s College Chances",
+    "ID": "20",
+    "name": "Tardware Tycoon",
+    "link": "https://haxor1337.itch.io/hardware-tycoon",
+    "year": null,
+    "title": "Tardware Tycoon",
     "Topic": "Hardware industry and market competition",
     "Data": "Simulated CPU-market and business-management data",
     "Game Goal": "Keep the company operating and expand market influence",
@@ -461,14 +420,14 @@
     "Failure Encoding": "Comparative performance",
     "Action Adjustment": "Parameter tuning",
     "Exploratory Learning": null,
-    "Interpretive Reframing": "Criteria reweighting",
-    "ID": "22"
+    "Interpretive Reframing": "Criteria reweighting"
   },
   {
-    "name": "College Chances by Income",
-    "link": "https://pudding.cool/games/where/",
-    "year": "2023",
-    "title": "Where in the USA is this?",
+    "ID": "21",
+    "name": "Federal Balancing Act",
+    "link": "https://us.abalancingact.com/federal-budget-simulator",
+    "year": null,
+    "title": "Federal Balancing Act",
     "Topic": "U.S. federal budget balancing",
     "Data": "CBO, OMB, SSA, and federal budget data",
     "Game Goal": "Achieve long-term fiscal sustainability",
@@ -482,14 +441,14 @@
     "Failure Encoding": "Comparative performance",
     "Action Adjustment": "Parameter tuning",
     "Exploratory Learning": null,
-    "Interpretive Reframing": "Criteria reweighting",
-    "ID": "23"
+    "Interpretive Reframing": "Criteria reweighting"
   },
   {
-    "name": "The Drug Overdose Epidemic",
-    "link": "https://www.nytimes.com/interactive/2017/04/14/upshot/drug-overdose-epidemic-you-draw-it.html",
-    "year": "2017",
-    "title": "You Draw It: Just How Bad Is the Drug Overdose Epidemic?",
+    "ID": "22",
+    "name": "College Chances by Income",
+    "link": "https://www.nytimes.com/interactive/2015/05/28/upshot/you-draw-it-how-family-income-affects-childrens-college-chances.html",
+    "year": "2015",
+    "title": "You Draw It: How Family Income Predicts Children’s College Chances",
     "Topic": "Family income and college opportunity",
     "Data": "Household income and college-attendance data",
     "Game Goal": "Draw the relationship between income and college access",
@@ -503,14 +462,14 @@
     "Failure Encoding": "Evaluative feedback",
     "Action Adjustment": null,
     "Exploratory Learning": "Hypothesis testing",
-    "Interpretive Reframing": null,
-    "ID": "24"
+    "Interpretive Reframing": null
   },
   {
-    "name": "Assessment of Obamas Presidency",
-    "link": "https://www.nytimes.com/interactive/2017/01/15/us/politics/you-draw-obama-legacy.html",
-    "year": "2017",
-    "title": "You Draw It: What Got Better or Worse During Obama’s Presidency",
+    "ID": "23",
+    "name": "College Chances by Income",
+    "link": "https://pudding.cool/games/where/",
+    "year": "2023",
+    "title": "Where in the USA is this?",
     "Topic": "Geographic recognition and place perception",
     "Data": "Wikimedia Commons geotagged image data",
     "Game Goal": "Guess the U.S. location based on photo clues",
@@ -524,14 +483,14 @@
     "Failure Encoding": "Evaluative feedback",
     "Action Adjustment": "Action sequence modification",
     "Exploratory Learning": "Hypothesis testing",
-    "Interpretive Reframing": null,
-    "ID": "25"
+    "Interpretive Reframing": null
   },
   {
-    "name": "Climate Choices Quiz",
-    "link": "https://www.nytimes.com/interactive/2020/08/30/climate/climate-footprint-quiz.html?searchResultPosition=44",
-    "year": "2020",
-    "title": "Think You’re Making Good Climate Choices? Take This Mini-Quiz",
+    "ID": "24",
+    "name": "The Drug Overdose Epidemic",
+    "link": "https://www.nytimes.com/interactive/2017/04/14/upshot/drug-overdose-epidemic-you-draw-it.html",
+    "year": "2017",
+    "title": "You Draw It: Just How Bad Is the Drug Overdose Epidemic?",
     "Topic": "The U.S. drug-overdose crisis",
     "Data": "U.S. overdose-death statistics and local estimates",
     "Game Goal": "Estimate the growth trend in overdose deaths",
@@ -545,14 +504,14 @@
     "Failure Encoding": "Evaluative feedback",
     "Action Adjustment": null,
     "Exploratory Learning": "Hypothesis testing",
-    "Interpretive Reframing": null,
-    "ID": "26"
+    "Interpretive Reframing": null
   },
   {
-    "name": "US Presidential Election",
-    "link": "https://www.nytimes.com/interactive/2016/02/27/upshot/republican-delegate-calculator-how-trump-can-win.html",
-    "year": "2016",
-    "title": "The Cold Hard Math of\nHow Trump Can Win, and\nHow Rubio Can Stop Him",
+    "ID": "25",
+    "name": "Assessment of Obamas Presidency",
+    "link": "https://www.nytimes.com/interactive/2017/01/15/us/politics/you-draw-obama-legacy.html",
+    "year": "2017",
+    "title": "You Draw It: What Got Better or Worse During Obama’s Presidency",
     "Topic": "Socioeconomic change during Obama’s presidency",
     "Data": "U.S. social, economic, and policy time-series indicators",
     "Game Goal": "Judge whether indicators improved or worsened during the presidency",
@@ -566,14 +525,14 @@
     "Failure Encoding": "Evaluative feedback",
     "Action Adjustment": null,
     "Exploratory Learning": "Hypothesis testing",
-    "Interpretive Reframing": null,
-    "ID": "27"
+    "Interpretive Reframing": null
   },
   {
-    "name": "Celebrity Spelling Bee",
-    "link": "https://pudding.cool/2019/02/gyllenhaal/",
-    "year": "2019",
-    "title": "Celebrity Spelling Bee",
+    "ID": "26",
+    "name": "Climate Choices Quiz",
+    "link": "https://www.nytimes.com/interactive/2020/08/30/climate/climate-footprint-quiz.html?searchResultPosition=44",
+    "year": "2020",
+    "title": "Think You’re Making Good Climate Choices? Take This Mini-Quiz",
     "Topic": "Personal carbon footprints and mitigation actions",
     "Data": "Emissions-impact estimates for individual mitigation actions",
     "Game Goal": "Identify which actions reduce emissions more effectively",
@@ -587,14 +546,14 @@
     "Failure Encoding": "Evaluative feedback",
     "Action Adjustment": null,
     "Exploratory Learning": "Hypothesis testing",
-    "Interpretive Reframing": null,
-    "ID": "28"
+    "Interpretive Reframing": null
   },
   {
-    "name": "To Build a Better Ballot",
-    "link": "https://ncase.me/ballot/",
+    "ID": "27",
+    "name": "US Presidential Election",
+    "link": "https://www.nytimes.com/interactive/2016/02/27/upshot/republican-delegate-calculator-how-trump-can-win.html",
     "year": "2016",
-    "title": "To Build a Better Ballot",
+    "title": "The Cold Hard Math of How Trump Can Win, and How Rubio Can Stop Him",
     "Topic": "Republican primary and delegate calculation",
     "Data": "2016 Republican primary results, state rules, and delegate data",
     "Game Goal": "Calculate whether a candidate can win the nomination",
@@ -608,14 +567,14 @@
     "Failure Encoding": "Evaluative feedback",
     "Action Adjustment": "Parameter tuning",
     "Exploratory Learning": null,
-    "Interpretive Reframing": "Perspective shifting",
-    "ID": "29"
+    "Interpretive Reframing": "Perspective shifting"
   },
   {
-    "name": "The Extent of the 'Green Wave'",
-    "link": "https://newslab.malaysiakini.com/greenwave-state-polls/en/?ref=sigmaawards.org",
-    "year": "2023",
-    "title": "State polls: How far can the ‘Green Wave’ go?",
+    "ID": "28",
+    "name": "Celebrity Spelling Bee",
+    "link": "https://pudding.cool/2019/02/gyllenhaal/",
+    "year": "2019",
+    "title": "Celebrity Spelling Bee",
     "Topic": "Celebrity spelling and linguistic memory",
     "Data": "Google search data, reader submissions, and IPA data",
     "Game Goal": "Test whether the celebrity’s name can be spelled correctly",
@@ -629,14 +588,14 @@
     "Failure Encoding": "Difficulty mapping",
     "Action Adjustment": null,
     "Exploratory Learning": "Hypothesis testing",
-    "Interpretive Reframing": null,
-    "ID": "30"
+    "Interpretive Reframing": null
   },
   {
-    "name": "District",
-    "link": "https://polytrope.com/district/",
+    "ID": "29",
+    "name": "To Build a Better Ballot",
+    "link": "https://ncase.me/ballot/",
     "year": "2016",
-    "title": "DISTRICT: A Game about Representation & Redistricting",
+    "title": "To Build a Better Ballot",
     "Topic": "Voting systems and democratic representation",
     "Data": "Spatial voting simulations and vote-counting rules",
     "Game Goal": "Explore more representative voting methods",
@@ -650,14 +609,14 @@
     "Failure Encoding": "Evaluative feedback",
     "Action Adjustment": "Strategy reconfiguration",
     "Exploratory Learning": "Iterative experimentation",
-    "Interpretive Reframing": "Perspective shifting",
-    "ID": "31"
+    "Interpretive Reframing": "Perspective shifting"
   },
   {
-    "name": "The Evolution of Trust",
-    "link": "https://ncase.me/trust/",
-    "year": "2021",
-    "title": "The Evolution of Trust",
+    "ID": "30",
+    "name": "The Extent of the 'Green Wave'",
+    "link": "https://newslab.malaysiakini.com/greenwave-state-polls/en/?ref=sigmaawards.org",
+    "year": "2023",
+    "title": "State polls: How far can the ‘Green Wave’ go?",
     "Topic": "Party support shifts in Malaysian state elections",
     "Data": "GE15 voter data, constituency results, and turnout assumptions",
     "Game Goal": "Predict the possible extent of the “Green Wave”",
@@ -671,14 +630,14 @@
     "Failure Encoding": "Evaluative feedback",
     "Action Adjustment": "Parameter tuning",
     "Exploratory Learning": null,
-    "Interpretive Reframing": "Perspective shifting",
-    "ID": "32"
+    "Interpretive Reframing": "Perspective shifting"
   },
   {
-    "name": "Guess Trump’s Record",
-    "link": "https://www.nytimes.com/interactive/2020/10/05/opinion/trump-record-quiz.html",
-    "year": "2020",
-    "title": "Can You Guess Trump’s Record?",
+    "ID": "31",
+    "name": "District",
+    "link": "https://polytrope.com/district/",
+    "year": "2016",
+    "title": "DISTRICT: A Game about Representation & Redistricting",
     "Topic": "Redistricting and representation",
     "Data": "Simulated voter distribution and seat-allocation rules",
     "Game Goal": "Draw districts that better reflect representation",
@@ -692,14 +651,14 @@
     "Failure Encoding": "Evaluative feedback",
     "Action Adjustment": "Parameter tuning",
     "Exploratory Learning": "Iterative experimentation",
-    "Interpretive Reframing": null,
-    "ID": "33"
+    "Interpretive Reframing": null
   },
   {
-    "name": null,
-    "link": null,
-    "year": null,
-    "title": null,
+    "ID": "32",
+    "name": "The Evolution of Trust",
+    "link": "https://ncase.me/trust/",
+    "year": "2021",
+    "title": "The Evolution of Trust",
     "Topic": "Trust, cooperation, and game theory",
     "Data": "Prisoner’s Dilemma and Axelrod cooperation-model simulations",
     "Game Goal": "Understand how trust emerges or collapses",
@@ -713,14 +672,14 @@
     "Failure Encoding": "Evaluative feedback",
     "Action Adjustment": "Strategy reconfiguration",
     "Exploratory Learning": "Iterative experimentation",
-    "Interpretive Reframing": null,
-    "ID": "34"
+    "Interpretive Reframing": null
   },
   {
-    "name": null,
-    "link": null,
-    "year": null,
-    "title": null,
+    "ID": "33",
+    "name": "Guess Trump’s Record",
+    "link": "https://www.nytimes.com/interactive/2020/10/05/opinion/trump-record-quiz.html",
+    "year": "2020",
+    "title": "Can You Guess Trump’s Record?",
     "Topic": "Trump-era policies and social indicators",
     "Data": "Trump-era policy and social indicator statistics",
     "Game Goal": "Judge changes in indicators during Trump’s presidency",
@@ -734,7 +693,6 @@
     "Failure Encoding": "Evaluative feedback",
     "Action Adjustment": null,
     "Exploratory Learning": "Hypothesis testing",
-    "Interpretive Reframing": null,
-    "ID": "35"
+    "Interpretive Reframing": null
   }
 ]
